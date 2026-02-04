@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asesora - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="assets/css/header.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <!-- Agregar favicon -->
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-container" id="header-container"></header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="hero-caption"><span class="hero-cursive">Software</span> para la administración de</p>
+        <h1 class="hero-highlight">Servicios Sanitarios Rurales</h1>
+        <div class="hero-cta-wrap">
+          <a class="hero-cta" href="contacto.html">Contáctanos ahora</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <picture>
+          <source srcset="assets/images/desktop/hero-image.png" media="(min-width: 769px)">
+          <source srcset="assets/images/tablet/hero-image.png" media="(min-width: 551px)">
+          <img src="assets/images/mobile/hero-image.png" class="hero-image" alt="Hero Image">
+        </picture>
+      </div>
+    </section>
+    <!-- Saludo Section -->
+    <section class="saludo">
+      <div>
+        <h5 class="saludo-title">Hola, somos <span class="saludo-highlight">Asesora.</span></h5>
+        <p class="saludo-texto">
+          <span class="saludo-text-highlight">
+            Pioneros en la transformación digital de los Servicios Sanitarios Rurales en Chile.
+          </span>
+          Desarrollamos soluciones tecnológicas que conectan
+          comunidades rurales con servicios más eficientes y sostenibles.
+        </p>
+      </div>
+      <div>
+        <figure>
+          <picture>
+            <source srcset="assets/images/desktop/saludo-image.png" media="(min-width: 1024px)">
+            <source srcset="assets/images/tablet/saludo-image.png" media="(min-width: 600px)">
+            <img src="assets/images/mobile/saludo-image.png" class="saludo-image" alt="Saludo Image">
+          </picture>
+        </figure>
+      </div>
+    </section>
+    <!-- Servicios Section -->
+    <section class="servicios-wrap">
+      <ul class="servicios-list">
+        <li class="servicios-item">
+          <i class="bi bi-check2-circle"></i>
+          <p class="servicios-texto">Facturación de <span class="servicios-highlight">subsidios</span></p>
+        </li>
+        <li class="servicios-item">
+          <i class="bi bi-check2-circle"></i>
+          <p class="servicios-texto">Envío de <span class="servicios-highlight">Documentos Tributarios Electrónicos</span></p>
+        </li>
+        <li class="servicios-title">GESTIÓN DE <span class="servicios-highlight">SERVICIOS SANITARIOS RURALES</span>
+        </li>
+        <li class="servicios-item">
+          <i class="bi bi-check2-circle"></i>
+          <p class="servicios-texto"><span class="servicios-highlight">Facturación</span> en lotes</p>
+        </li>
+        <li class="servicios-item">
+          <i class="bi bi-check2-circle"></i>
+          <p class="servicios-texto">Convenios y <span class="servicios-highlight">repactaciones</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Productos Section -->
+    <section class="productos">
+      <!-- Ondas SVGs borde superior -->
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none" class="top-wave">
+        <path d="M0,60 C240,100 480,100 720,60 960,20 1200,20 1440,60 L1440,150 L0,150 Z" fill="#d88c29"></path>
+      </svg>
+      <div class="productos-grid">
+        <!-- Producto 1 -->
+        <a href="producto-detalle.html?id=gestion-sanitarios" class="producto-link">
+          <article class="producto-card">
+            <figure class="producto-figure">
+              <picture>
+                <source srcset="assets/images/desktop/producto-ssr-desk.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/producto-ssr-tablet.png" media="(min-width: 600px)">
+                <img class="producto-image" src="assets/images/mobile/producto-ssr-mobile.png"
+                  alt="Gestión de Servicios Sanitarios Rurales">
+              </picture>
+              <figcaption class="producto-caption">
+                <span class="producto-texto">Gestión de <span class="texto-higlight"> Servicios Sanitarios
+                    Rurales</span></span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+        <!-- Producto 2 -->
+        <a href="producto-detalle.html?id=toma-lecturas" class="producto-link">
+          <article class="producto-card">
+            <figure class="producto-figure">
+              <picture>
+                <source srcset="assets/images/desktop/producto-caproid-desk.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/producto-caproid-tablet.png" media="(min-width: 600px)">
+                <img class="producto-image" src="assets/images/mobile/producto-caproid-mobile.png" alt="Toma de lecturas Capdroid app">
+              </picture>
+              <figcaption class="producto-caption">
+                <span class="producto-texto">Toma de Lecturas <span class="texto-higlight">Capdroid App</span></span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+        <!-- Producto 3 -->
+        <a href="producto-detalle.html?id=gestion-contabilidad" class="producto-link">
+          <article class="producto-card">
+            <figure class="producto-figure">
+              <picture>
+                <source srcset="assets/images/desktop/producto-contabilidad-desk.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/producto-contabilidad-tablet.png" media="(min-width: 600px)">
+                <img class="producto-image" src="assets/images/mobile/producto-contabilidad-mobile.png" alt="Gestión de contabilidad">
+              </picture>
+              <figcaption class="producto-caption">
+                <span class="producto-texto">Gestión de <span class="texto-higlight">Contabilidad</span></span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+        <!-- Producto 4 -->
+        <a href="producto-detalle.html?id=geolocalizacion" class="producto-link">
+          <article class="producto-card">
+            <figure class="producto-figure">
+              <picture>
+                <source srcset="assets/images/desktop/producto-geo-desk.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/producto-geo-tablet.png" media="(min-width: 600px)">
+                <img class="producto-image" src="assets/images/mobile/producto-geo-mobile.png" alt="Sistema de geolocalización">
+              </picture>
+              <figcaption class="producto-caption">
+                <span class="producto-texto">Sistema de <span class="texto-higlight">Geolocalización</span></span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+      </div>
+      <div class="productos-cta">
+        <a href="productos.html" class="productos-btn">Conoce más de nuestros <span class="productos-highlight">productos</span>
+          aquí</a>
+      </div>
+      <!-- Ondas SVGs borde inferior -->
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none" class="bottom-wave">
+        <path d="M0,80 C240,20 480,20 720,60 960,100 1200,120 1440,80 L1440,0 L0,0 Z" fill="#d88c29"></path>
+      </svg>
+    </section>
+    <!-- Alianzas de Pago Section -->
+    <section class="pagos">
+      <div class="pagos-titulo"> Integraciones <span class="productos-highlight">Tecnológicas</span></div>
+      <div>
+        <ul class="pagos-list">
+          <!-- Web Pay -->
+          <li class="pagos-item">
+            <figure class="pagos-card">
+              <picture>
+                <source srcset="assets/images/desktop/pagos-webpay-image.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/pagos-webpay-image.png" media="(min-width: 600px)">
+                <img src="assets/images/mobile/pagos-webpay-image.png" class="pagos-logo-webpay" alt="Webpay">
+              </picture>
+              <figcaption class="pagos-caption">webpay</figcaption>
+            </figure>
+          </li>
+          <!-- Transbank -->
+          <li class="pagos-item">
+            <figure class="pagos-card">
+              <picture>
+                <source srcset="assets/images/desktop/pagos-transbank-image.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/pagos-transbank-image.png" media="(min-width: 600px)">
+                <img src="assets/images/mobile/pagos-transbank-image.png" class="pagos-logo-Transbank" alt="Transbank">
+              </picture>
+              <figcaption class="pagos-caption">POS Fijo Integrado</figcaption>
+            </figure>
+          </li>
+          <!-- Caja Vecina-->
+          <li class="pagos-item">
+            <figure class="pagos-card">
+              <picture>
+                <source srcset="assets/images/desktop/pagos-caja-image.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/pagos-caja-image.png" media="(min-width: 600px)">
+                <img src="assets/images/mobile/pagos-caja-image.png" class="pagos-logo" alt="Caja Vecina">
+              </picture>
+              <figcaption class="pagos-caption">App y Caja Vecina</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Compromiso Section -->
+    <section class="compromiso">
+      <picture>
+                <source srcset="assets/images/desktop/compromiso-comillas.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/compromiso-comillas.png" media="(min-width: 600px)">
+                <img src="assets/images/mobile/compromiso-comillas.png" class="compromiso-comillas-top" alt="Imagen de compromiso">
+              </picture>
+      <p class="compromiso-texto">
+        Nuestro compromiso es <span class="compromiso-highlight">disminuir la brecha tecnológica presente en las zonas
+          rurales</span> del territorio nacional a través de la creación de sistemas informáticos
+        para el desarrollo y crecimiento de los Servicios Sanitarios Rurales.
+      </p>
+      <picture>
+                <source srcset="assets/images/desktop/compromiso-comillas.png" media="(min-width: 1024px)">
+                <source srcset="assets/images/tablet/compromiso-comillas.png" media="(min-width: 600px)">
+                <img src="assets/images/mobile/compromiso-comillas.png" class="compromiso-comillas-bottom" alt="Imagen de compromiso">
+              </picture>
+    </section>
+    <!-- Información Empresa Section-->
+    <footer class="info-footer">
+      <div class="info">
+        <div class="info-left">
+          <iframe
+            class="info-image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.4986844419!2d-71.24089!3d-34.98306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c6a3f5f0f0f1%3A0x0!2sYungay%20553%2C%20Curic%C3%B3%2C%20Maule!5e0!3m2!1ses!2scl!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="info-right">
+          <h2 class="info-title">Impulsemos tu Servicio Sanitario Rural <span class="info-highlight">al siguiente nivel.</span></h2>
+          <dl class="info-list">
+            <div class="info-row">
+              <dt class="info-label">Dirección postal</dt>
+              <dd class="info-value">Yungay 553, oficina 7, Curicó, Chile.</dd>
+            </div>
+            <div class="info-row">
+              <dt class="info-label">Dirección de correo electrónico</dt>
+              <dd class="info-value">
+                <p>contacto@asesora.cl</p>
+              </dd>
+            </div>
+            <div class="info-row">
+              <dt class="info-label">Número telefónico</dt>
+              <dd class="info-value">
+                <p>9 6878 8593 | 9 6836 2770</p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <div class="info-logo-container">
+          <picture>
+            <source srcset="assets/images/desktop/logo.png" media="(min-width: 1024px)">
+            <source srcset="assets/images/tablet/logo.png" media="(min-width: 600px)">
+            <img src="assets/images/mobile/logo.png" class="info-logo" alt="Logo Asesora">
+          </picture>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="assets/js/load-components.js"></script>
+
+</body>
+
+</html>

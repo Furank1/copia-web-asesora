@@ -1,0 +1,601 @@
+/* Estilos de la Página Nosotros */
+/* Enfoque Mobile First */
+
+/* ===== Estilos Mobile (max-width: 599px) ===== */
+@media screen and (max-width: 599px) {
+    
+    /* Sección Portada / Título */
+    .nosotros-portada {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .nosotros-titulo {
+        color: #1f1f1f;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nosotros-titulo-resaltado {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    /* Sección Descripción */
+    .nosotros-seccion-descripcion {
+        padding: 0 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .nosotros-descripcion {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #1f1f1f;
+    }
+
+    /* Sección Pilares */
+    .nosotros-pilares {
+        padding: 0 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .pilares-lista {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .pilar-elemento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F0F0F0;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .pilar-icono {
+        display: none;
+    }
+
+    .pilar-texto {
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-style: italic;
+        color: #1f1f1f;
+    }
+
+    /* Sección Valores (Misión, Propósito, Visión) */
+    .nosotros-valores {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .valores-contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .valor-elemento {
+        border-left: 4px solid #d88c29;
+        padding-left: 1rem;
+    }
+
+    .valor-titulo {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0 0 0.5rem 0;
+        color: #d88c29;
+    }
+
+    .valor-resaltado {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .valor-descripcion {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #1f1f1f;
+        margin: 0;
+    }
+
+    .valor-descripcion em {
+        font-style: italic;
+    }
+
+    .valores-contenedor-imagen {
+        display: flex;
+        justify-content: center;
+    }
+
+    .valores-contenedor-imagen picture {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .valores-imagen {
+        margin-top: 2rem;
+        max-width: 35%;
+        height: auto;
+    }
+
+    /* Sección Tarjetas */
+    .nosotros-tarjetas {
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .tarjeta-elemento {
+        position: relative;
+        border-radius: 30px;
+        padding: 1.5rem 2rem;
+        padding-right: 4rem;
+        min-height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tarjeta-crema {
+        background-color: #E6C08E;
+    }
+
+    .tarjeta-naranja {
+        background-color: #d88c29;
+    }
+
+    .tarjeta-contenido {
+        text-align: center;
+    }
+
+    .tarjeta-texto {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .tarjeta-resaltado {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tarjeta-resaltado-oscuro {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tarjeta-cursor {
+        position: absolute;
+        right: -20px;
+        bottom: -30px;
+        width: 50px;
+        height: auto;
+    }
+
+    .tarjeta-cursor-naranja {
+        filter: none;
+    }
+
+    .tarjeta-cursor-gris {
+        filter: grayscale(100%) brightness(0.7);
+    }
+}
+
+/* ===== Estilos Tablet (600px - 1023px) ===== */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    
+    .nosotros-portada {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .nosotros-titulo {
+        color: #1f1f1f;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nosotros-titulo-resaltado {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .nosotros-seccion-descripcion {
+        padding: 0 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .nosotros-descripcion {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #1f1f1f;
+    }
+
+    .nosotros-pilares {
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .pilares-lista {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .pilar-elemento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F0F0F0;
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .pilar-icono {
+        display: none;
+    }
+
+    .pilar-texto {
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-style: italic;
+        color: #1f1f1f;
+    }
+
+    /* Sección Valores (Misión, Propósito, Visión) */
+    .nosotros-valores {
+        padding: 2rem 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .valores-contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .valor-elemento {
+        border-left: 4px solid #d88c29;
+        padding-left: 1.5rem;
+    }
+
+    .valor-titulo {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 0 0 0.5rem 0;
+        color: #d88c29;
+    }
+
+    .valor-resaltado {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .valor-descripcion {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #1f1f1f;
+        margin: 0;
+    }
+
+    .valor-descripcion em {
+        font-style: italic;
+    }
+
+    .valores-contenedor-imagen {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .valores-contenedor-imagen picture {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .valores-imagen {
+        max-width: 45%;
+        height: auto;
+    }
+
+    /* Sección Tarjetas */
+    .nosotros-tarjetas {
+        padding: 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .tarjeta-elemento {
+        position: relative;
+        border-radius: 40px;
+        padding: 1.5rem 3rem;
+        padding-right: 5rem;
+    }
+
+    .tarjeta-crema {
+        background-color: #E6C08E;
+    }
+
+    .tarjeta-naranja {
+        background-color: #d88c29;
+    }
+
+    .tarjeta-contenido {
+        text-align: center;
+    }
+
+    .tarjeta-texto {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .tarjeta-resaltado {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tarjeta-resaltado-oscuro {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tarjeta-cursor {
+        position: absolute;
+        right: -10px;
+        bottom: -15px;
+        width: 40px;
+        height: auto;
+    }
+
+    .tarjeta-cursor-naranja {
+        filter: none;
+    }
+
+    .tarjeta-cursor-gris {
+        filter: grayscale(100%) brightness(0.7);
+    }
+}
+
+/* ===== Estilos Desktop (min-width: 1024px) ===== */
+@media screen and (min-width: 1024px) {
+    
+    /* Sección Portada / Título */
+    .nosotros-portada {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .nosotros-titulo {
+        color: #1f1f1f;
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nosotros-titulo-resaltado {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    /* Sección Descripción */
+    .nosotros-seccion-descripcion {
+        max-width: 900px;
+        margin: 0 auto 3rem auto;
+        padding: 0 2rem;
+    }
+
+    .nosotros-descripcion {
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 1.7;
+        color: #1f1f1f;
+    }
+
+    /* Sección Pilares */
+    .nosotros-pilares {
+        max-width: 1200px;
+        margin: 0 auto 4rem auto;
+        padding: 0 2rem;
+    }
+
+    .pilares-lista {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .pilar-elemento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F0F0F0;
+        padding: 1.2rem 2.5rem;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pilar-icono {
+        display: none;
+    }
+
+    .pilar-texto {
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-style: italic;
+        color: #1f1f1f;
+    }
+
+    /* Sección Valores (Misión, Propósito, Visión) */
+    .nosotros-valores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: 1400px;
+        margin: 0 auto 4rem auto;
+        padding: 3rem 4rem;
+        align-items: center;
+    }
+
+    .valores-contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .valor-elemento {
+        border-left: 5px solid #d88c29;
+        padding-left: 1.5rem;
+    }
+
+    .valor-titulo {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0 0 0.8rem 0;
+        color: #d88c29;
+    }
+
+    .valor-resaltado {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .valor-descripcion {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #1f1f1f;
+        margin: 0;
+    }
+
+    .valor-descripcion em {
+        font-style: italic;
+    }
+
+    .valores-contenedor-imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .valores-contenedor-imagen picture {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .valores-imagen {
+        max-width: 70%;
+        height: auto;
+    }
+
+    /* Sección Tarjetas */
+    .nosotros-tarjetas {
+        max-width: 1000px;
+        margin: 0 auto 5rem auto;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tarjeta-elemento {
+        position: relative;
+        border-radius: 50px;
+        padding: 2rem 4rem;
+        padding-right: 6rem;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tarjeta-elemento:hover {
+        transform: translateX(10px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tarjeta-crema {
+        background-color: #E6C08E;
+    }
+
+    .tarjeta-naranja {
+        background-color: #d88c29;
+    }
+
+    .tarjeta-contenido {
+        text-align: center;
+    }
+
+    .tarjeta-texto {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .tarjeta-resaltado {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tarjeta-resaltado-oscuro {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tarjeta-cursor {
+        position: absolute;
+        right: -15px;
+        bottom: -20px;
+        width: 55px;
+        height: auto;
+    }
+
+    .tarjeta-cursor-naranja {
+        filter: none;
+    }
+
+    .tarjeta-cursor-gris {
+        filter: grayscale(100%) brightness(0.7);
+    }
+}

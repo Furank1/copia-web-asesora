@@ -1,0 +1,350 @@
+/* Página de Detalle de Producto */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.producto-detalle-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botón Volver */
+.volver-nav {
+    padding: 25px 0;
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #D88C29;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgba(216, 140, 41, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hero */
+.producto-hero {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.producto-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 15px;
+}
+
+.producto-slogan-principal {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: #a2a2a2;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Slogans secundarios */
+.producto-slogans {
+    margin-bottom: 50px;
+}
+
+.slogans-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slogans-lista li {
+    background-color: #ecb670;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slogans-lista li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenido Principal (Descripción + Ventajas) */
+.producto-contenido-principal {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+
+}
+
+/* Descripción */
+.producto-descripcion {
+    flex: 1;
+    text-align: justify;
+}
+
+.descripcion-texto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 0;
+}
+
+/* Ventajas (Badges) */
+.producto-ventajas {
+    flex-shrink: 0;
+    width: 350px;
+    margin-left: -30px;
+}
+
+.ventajas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ventaja-badge {
+    background-color: transparent;
+    color: #1f1f1f;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.ventaja-badge::before {
+    content: '\F26B';
+    font-family: 'bootstrap-icons';
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.ventaja-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Cards Grid */
+.producto-cards {
+    margin-bottom: 60px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.ventaja-card {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ventaja-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.ventaja-card-circulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #D88C29 0%, #E6C08E 100%);
+    flex-shrink: 0;
+    display: none;
+}
+
+.ventaja-card-texto {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    font-style: italic;
+}
+
+/* Slogan Final */
+.producto-slogan-final {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: -2rem;
+    padding: 30px 20px;
+}
+
+.slogan-final-texto {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-weight: 500;
+    color: #555;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+}
+
+/* CTA */
+.producto-cta {
+    text-align: center;
+    padding: 40px 0 60px;
+}
+
+.producto-cta-btn {
+    display: inline-block;
+    background-color: #D88C29;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.producto-cta-btn:hover {
+    background-color: #b87520;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.producto-cta-btn:active {
+    transform: translateY(0);
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .producto-descripcion{
+        border-right: 2px solid #c9c9c9;
+    padding-right: 20px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .producto-detalle-main {
+        padding: 0 30px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slogans-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slogans-lista li {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 599px) {
+    .producto-detalle-main {
+        padding: 0 15px;
+    }
+
+    .volver-nav {
+        padding: 15px 0;
+    }
+
+    .btn-volver {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .producto-hero {
+        margin-bottom: 25px;
+    }
+
+    .producto-slogans {
+        margin-bottom: 30px;
+    }
+
+    .slogans-lista {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .slogans-lista li {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .producto-descripcion {
+        margin-bottom: 30px;   
+    }
+
+    .descripcion-texto {
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    .producto-contenido-principal {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .producto-ventajas {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .ventajas-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ventaja-badge {
+        justify-content: center;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .ventaja-card {
+        flex-direction: row;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .ventaja-card-circulo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .producto-cta {
+        padding: 30px 0 50px;
+    }
+
+    .producto-cta-btn {
+        padding: 12px 40px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asesora - Contacto</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/contacto.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header class="header-container" id="header-container"></header>
+
+    <main>
+      <!-- Sección Contacto -->
+      <section class="contacto-seccion">
+        <!-- Tarjeta de Información -->
+        <aside class="contacto-info">
+          <h2 class="info-titulo">Te invitamos a conocernos</h2>
+
+          <ul class="info-lista">
+            <li class="info-elemento">
+              <i class="bi bi-telephone-fill"></i>
+              <span>9 6878 8593</span>
+            </li>
+            <li class="info-elemento">
+              <i class="bi bi-telephone-fill"></i>
+              <span>9 6836 2770</span>
+            </li>
+            <li class="info-elemento">
+              <i class="bi bi-envelope-fill"></i>
+              <span>contacto@asesora.cl</span>
+            </li>
+            <li class="info-elemento">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div class="info-direccion">
+                <span>Yungay #553 Oficina 7 Curicó,</span>
+                <span>Región del Maule - Chile</span>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Mapa en tarjeta de info -->
+          <div class="info-mapa">
+            <iframe
+              class="info-mapa-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.4986844419!2d-71.24089!3d-34.98306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c6a3f5f0f0f1%3A0x0!2sYungay%20553%2C%20Curic%C3%B3%2C%20Maule!5e0!3m2!1ses!2scl!4v1234567890"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </aside>
+
+        <!-- Formulario -->
+        <div class="contacto-formulario">
+          <p class="formulario-titulo">Hablemos</p>
+          <p class="formulario-subtitulo">
+            Déjanos tus datos y te contactaremos a la brevedad.
+          </p>
+
+          <!-- Fila 1: Nombre y Correo -->
+          <div class="formulario-fila">
+            <div class="formulario-grupo">
+              <label class="formulario-label" for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" class="formulario-input" placeholder="Ingresa tu nombre completo" required/>
+            </div>
+            <div class="formulario-grupo">
+              <label class="formulario-label" for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="email" class="formulario-input" placeholder="ej.: nombre@dominio.com" required/>
+            </div>
+          </div>
+
+          <!-- Fila 2: Teléfono y Ciudad -->
+          <div class="formulario-fila">
+            <div class="formulario-grupo">
+              <label class="formulario-label" for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="formulario-input" placeholder="Ej.: +569 6878 8593" required/>
+            </div>
+            <div class="formulario-grupo">
+              <label class="formulario-label" for="ciudad">Ciudad</label>
+              <input type="text" id="ciudad" name="ciudad" class="formulario-input" placeholder="Ej.: Curicó" required/>
+            </div>
+          </div>
+
+          <!-- Mensaje -->
+          <div class="formulario-grupo formulario-grupo-mensaje">
+            <label class="formulario-label" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="formulario-textarea" placeholder="Cuéntanos brevemente en qué podemos ayudarte..." maxlength="800" required></textarea>
+            <span class="formulario-contador">0/800</span>
+          </div>
+
+          <!-- Botón Enviar -->
+          <div class="formulario-acciones">
+            <button class="formulario-btn">Enviar mensaje</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Mapa (oculto temporalmente) -->
+      <section class="mapa-seccion" style="display: none">
+        <h2 class="mapa-titulo">Encuéntranos en</h2>
+        <div class="mapa-contenedor">
+          <iframe
+            class="mapa-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.4986844419!2d-71.24089!3d-34.98306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c6a3f5f0f0f1%3A0x0!2sYungay%20553%2C%20Curic%C3%B3%2C%20Maule!5e0!3m2!1ses!2scl!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/load-components.js"></script>
+
+
+    <script>
+        // ========== CONTADOR DE CARACTERES ==========
+        const textarea = document.getElementById('mensaje');
+        const contador = document.querySelector('.formulario-contador');
+        
+        if (textarea && contador) {
+            textarea.addEventListener('input', function() {
+                const length = this.value.length;
+                contador.textContent = `${length}/800`;
+            });
+        }
+
+        // ========== ENVIAR FORMULARIO ==========
+        document.querySelector('.formulario-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const boton = document.querySelector('.formulario-btn');
+            boton.disabled = true;
+
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const telefono = document.getElementById('telefono').value;
+            const ciudad = document.getElementById('ciudad').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const formData = new FormData();
+            formData.append('nombre', nombre);
+            formData.append('email', correo);
+            formData.append('telefono', telefono);
+            formData.append('ciudad', ciudad);
+            formData.append('mensaje', mensaje);
+
+            fetch('enviar-mail.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log('Respuesta del servidor:', data);
+                
+                // Reemplazar el formulario con un mensaje de éxito elegante
+                document.querySelector('.contacto-formulario').innerHTML = `
+                    <div class="mensaje-exito">
+                        <div class="mensaje-icono">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <h2 class="mensaje-titulo">¡Mensaje enviado con éxito!</h2>
+                        <p class="mensaje-subtitulo">Gracias por contactarnos. Nos pondremos en contacto contigo a la brevedad.</p>
+                        <div class="mensaje-divisor"></div>
+                    </div>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
+                boton.disabled = false;
+            });
+        });
+    </script>
+
+
+
+  </body>
+</html>

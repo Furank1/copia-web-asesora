@@ -1,0 +1,279 @@
+/*  RESET Y ESTILOS GLOBALES */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scrollbar-width: none;
+    background-color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER BASE */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #F6F6F6;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ===== LOGO ===== */
+.logo {
+    max-width: 180px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #d88c29;
+}
+
+/* Franja animada en hover */
+.nav-list li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #d88c29;
+    transition: width 0.3s ease, left 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Estado activo */
+.nav-list li a.activo {
+    color: #d88c29;
+    font-weight: 600;
+}
+
+.nav-list li a.activo::after {
+    width: 100%;
+    left: 0;
+    background-color: #d88c29;
+}
+
+/* BOTÓN ACCESO CLIENTES */
+.acceso-clientes {
+    background-color: transparent;
+    color: #d88c29;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.acceso-clientes:hover {
+    background-color: #f0f0f0;
+    border-color: #999999;
+    color: #333333;
+}
+
+.acceso-clientes:focus {
+    outline: 2px solid #cccccc;
+    outline-offset: 2px;
+}
+
+.acceso-clientes:active {
+    background-color: #e0e0e0;
+}
+
+.acceso-tablet,
+.acceso-desktop {
+    display: none;
+}
+
+/* MENÚ HAMBURGUESA */
+.abrir-menu {
+    display: none;
+    font-size: 1.5rem;
+}
+
+.cerrar-menu {
+    display: none;
+    margin-top: -0.4rem;
+}
+
+/* =================== MOBILE ==================== */
+@media screen and (max-width: 599px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #000000;
+    }
+
+    .cerrar-menu {
+        color: white;
+        font-size: 1.5rem;
+        align-self: flex-start;
+    }
+
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .menu-overlay.visible {
+        display: block;
+        opacity: 1;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 64%;
+        padding: 2rem;
+        background-color: rgb(90, 90, 90);
+        z-index: 1000;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .nav.visible {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        gap: 1.3rem;
+    }
+
+    .nav-list li a {
+        color: white;
+        margin: 1rem;
+    }
+}
+
+/* =================== TABLET ==================== */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    body {
+        margin-top: -1rem;
+        font-size: 17px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        max-width: 150px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .acceso-tablet {
+        display: block;
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .nav {
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        gap: 6rem;
+        font-size: 1.1rem;
+    }
+}
+
+/*==================== DESKTOP ====================*/
+@media screen and (min-width: 1024px) {
+    header {
+        width: 100%;
+        margin: 0 auto;
+        gap: 2rem;
+        padding-left: 4rem;
+        padding-right: 7rem;
+    }
+
+    .logo-link {
+        flex-shrink: 0;
+    }
+
+    .nav-list {
+        flex: 1;
+    }
+
+    .nav-list li a {
+        font-size: 1.2rem;
+    }
+
+    .acceso-desktop {
+        font-size: 1.2rem;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        flex-shrink: 0;
+    }
+}
